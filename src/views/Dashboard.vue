@@ -91,7 +91,7 @@ export default {
       this.btnUpdateModal();
     },
     getAllTransactions() {
-      const url = "http://127.0.0.1:8000/api/transactions";
+      const url = "/api/transactions";
       let requestOptions = {
         method: "GET",
         headers: {
@@ -116,7 +116,7 @@ export default {
         });
     },
     deleteTransaction(id, index) {
-      const url = "http://127.0.0.1:8000/api/transactions/" + id;
+      const url = "/api/transactions/" + id;
       let requestOptions = {
         method: "DELETE",
         headers: {

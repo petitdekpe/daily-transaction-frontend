@@ -40,7 +40,7 @@ export default {
   },
   methods: {
     register() {
-      const url = "http://127.0.0.1:8000/api/register";
+      const url = "/api/register";
       let requestOptions = {
         method: "POST",
         headers: {

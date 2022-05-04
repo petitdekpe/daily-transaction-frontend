@@ -48,7 +48,7 @@ export default {
         alert("Veillez Choisir le type de la transaction");
         location.reload();
       }
-      const url = "http://127.0.0.1:8000/api/transactions";
+      const url = "/api/transactions";
       let new_transaction = {
         libelle: this.libelle,
         amount: this.amount,

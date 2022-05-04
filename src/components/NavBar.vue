@@ -22,7 +22,7 @@
 export default {
   methods: {
     logout() {
-      const url = "http://127.0.0.1:8000/api/logout";
+      const url = "/api/logout";
       let requestOptions = {
         method: "POST",
         headers: {

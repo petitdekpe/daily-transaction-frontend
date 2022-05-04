@@ -34,7 +34,7 @@ export default {
   },
   methods: {
     login() {
-      const url = "http://127.0.0.1:8000/api/login";
+      const url = "/api/login";
       let requestOptions = {
         method: "POST",
         headers: {
