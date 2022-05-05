@@ -32,6 +32,7 @@
 </template>
 
 <script>
+import * as  toastr from "toastr";
 export default {
   props: ["showModal", "btnModal"],
   data() {
@@ -40,6 +41,7 @@ export default {
       amount: "",
       dates: "",
       types: "entree",
+      // user_id: "token",
     };
   },
   methods: {
@@ -54,6 +56,10 @@ export default {
         amount: this.amount,
         dates: this.dates,
         type: this.types,
+<<<<<<< HEAD
+=======
+        // user_id: this.id
+>>>>>>> 1779146... aa
       };
 
       console.log(new_transaction);
@@ -74,8 +80,11 @@ export default {
         .then((result) => {
           console.log(result);
           this.btnModal();
+          // toastr.success("Transactions réussie")
+          
           alert(result.message);
           location.reload();
+          
         })
         .catch((err) => {
           console.log("err");

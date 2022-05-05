@@ -14,7 +14,7 @@
           <input type="email" v-model="email" />
         </div>
         <div class="pass">
-          <label for="">Mot de pass</label>
+          <label for="">Mot de passe</label>
           <input type="password" v-model="password" />
         </div>
       </div>

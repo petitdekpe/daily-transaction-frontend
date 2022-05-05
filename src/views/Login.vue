@@ -10,7 +10,7 @@
           <input type="email" v-model="email" />
         </div>
         <div class="pass">
-          <label for="">Mot de pass</label>
+          <label for="">Mot de passe</label>
           <input type="password" v-model="password" />
         </div>
       </div>
@@ -25,6 +25,8 @@
 </template>
 
 <script>
+import * as  toastr from "toastr";
+
 export default {
   data() {
     return {
@@ -55,7 +57,9 @@ export default {
           if (result.token) {
             this.$store.commit("getInfo", result);
             this.$router.push("/dashboard");
-            alert(result.message)
+            toastr.success("Connexion réussie!")
+            // alert(result.message)
+            
           }
         })
         .catch((err) => {

@@ -19,6 +19,9 @@
 </template>
 
 <script>
+
+import * as  toastr from "toastr";
+
 export default {
   methods: {
     logout() {
@@ -39,7 +42,8 @@ export default {
           if (result.message == "logout") {
             this.$store.commit("removeUserInfos");
             this.$router.push("/");
-            alert("Deconnexion reussie");
+            toastr.success("Déconnexion réussie!")
+            // alert("Deconnexion reussie");
           }
         });
     },

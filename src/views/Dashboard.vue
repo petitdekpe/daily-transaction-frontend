@@ -39,12 +39,14 @@
         </thead>
 
         <tbody>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+          <tr v-for="(transaction, index) in transactions" :key="transaction.id ">
+
+            <td>{{ index+1 }}</td>
+            <td> {{ transaction.libelle}}</td>
+            <td>{{ transaction.amount}}</td>
+            <td>{{ transaction.dates}}</td>
+            <td>{{ transaction.type}}</td>
+            
             <td>
               <div class="actions">
                 <img src="@/assets/edit.svg" alt="" @click="openUpdateModal(transaction)"/>
@@ -143,18 +145,18 @@ export default {
 <style scoped>
 .main {
   min-height: 100vh;
-  padding: 0 119px;
+  padding: 0 7.438em;
   padding-bottom: 5em;
 }
 .name-and-add {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 92px;
+  margin-left: 5.75em;
 }
 .name {
   color: #ce8f31;
-  font-size: 64px;
+  font-size: 4em;
   font-family: "Open sans";
   font-weight: 300;
 }
@@ -162,26 +164,26 @@ export default {
   font-weight: 600;
 }
 .add-transation {
-  width: 309px;
-  height: 68px;
+  width: 19.313em;
+  height: 4.25em;
   font-family: "Open Sans";
   font-weight: 600;
   border: none;
   outline: none;
   background-color: #ce8f31;
   color: white;
-  border-radius: 10px;
-  font-size: 24px;
+  border-radius: 0.625em;
+  font-size: 1.5em;
   cursor: pointer;
 }
 .infos {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 84px;
-  padding-right: 92px;
+  margin-top: 5.25em;
+  padding-right: 5.75em;
   font-family: "Open sans";
-  margin-left: 92px;
+  margin-left: 5.75em;
 }
 .infos div {
   display: flex;
@@ -190,7 +192,7 @@ export default {
   align-items: center;
 }
 .infos .title {
-  font-weight: 300;
+  font-weight: 18.75em;
 }
 .entrees .number {
   color: #0a7c07;
@@ -202,7 +204,7 @@ export default {
   color: #ab4545;
 }
 .infos .number {
-  font-size: 64px;
+  font-size: 4em;
   font-weight: 600;
 }
 .infos .currency {
@@ -212,22 +214,22 @@ export default {
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 92px;
+  margin-top: 5.75em;
 }
 
 .data-table table {
   width: 100%;
   border-collapse: separate;
-  border-spacing: 0 2px;
+  border-spacing: 0 0.125em;
   font-family: "Open Sans";
-  font-size: 24px;
+  font-size: 1.5em;
   font-weight: 400;
 }
 .data-table table .actions {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 21px;
+  gap: 1.313em;
 }
 thead {
   background-color: #ce8f31;
@@ -239,7 +241,12 @@ tbody {
 td,
 th {
   text-align: center;
-  height: 50px;
-  min-width: 86px;
+  height: 3.125em;
+  min-width: 5.375em;
+}
+
+
+@media screen and (max-width:1050px) {
+  
 }
 </style>
