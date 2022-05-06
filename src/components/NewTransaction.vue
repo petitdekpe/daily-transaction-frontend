@@ -41,7 +41,6 @@ export default {
       amount: "",
       dates: "",
       types: "entree",
-      // user_id: "token",
     };
   },
   methods: {
@@ -56,7 +55,9 @@ export default {
         amount: this.amount,
         dates: this.dates,
         type: this.types,
+
         // user_id: this.id
+
       };
 
       console.log(new_transaction);
@@ -81,8 +82,8 @@ export default {
           
           alert(result.message);
           location.reload();
-          
-        })
+      
+      })
         .catch((err) => {
           console.log("err");
         });
