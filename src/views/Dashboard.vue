@@ -152,7 +152,7 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-left: 5.75em;
+  /* margin-left: 5.75em; */
 }
 .name {
   color: #ce8f31;
@@ -247,9 +247,49 @@ th {
 
 
 @media screen and (max-width:1050px) {
+  .name-and-add{
+    margin-left: 2em;
+  }
   .infos{
     display: block;
   }
+  .entrees{
+    padding: 2em;
+  }
+  .solde{
+    padding: 2em;
+  }
+  .sortie{
+    padding: 2em;
+  }
+  
+}
+@media screen and (max-width:800px) {
+  /* .name-and-add{
+    display: block;
+    text-align: center;
+  } */
+  .name {
+  margin-left: 0.5em;
+  font-size: 3em;
+  
+  }
+  .add-transation {
+  width: 8em;
+  height: 4em;
+  font-weight: 100;
+  font-size: 1.5em;
+  margin-right: 0.5em;
+  
+}
+.main{
+  padding: 2em;
+  padding-bottom: 5em;
+
+}
+.data-table{
+  overflow-x: auto;
+}
   
 }
 </style>

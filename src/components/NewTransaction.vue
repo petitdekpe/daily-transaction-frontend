@@ -101,48 +101,48 @@ export default {
   background-color: rgba(0, 0, 0, 0.4);
   display: flex;
   justify-content: center;
-  padding-top: 50px;
+  padding-top: 3.125em;
   font-family: "Open sans";
 }
 .modal {
-  width: 691.69px;
-  height: 646px;
+  width: 30em;
+  height: 20em;
   background-color: white;
 }
 .infomation {
-  height: 79.43px;
+  height: 4.938em;
   background-color: #ce8f31;
   color: white;
-  font-size: 36px;
-  font-weight: 400px;
+  font-size: 2.25em;
+  font-weight: 25em;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .libelle {
   width: 100%;
-  padding: 0 46.39px;
+  padding: 0 2.899em;
   display: flex;
   flex-direction: column;
-  margin-top: 163px;
+  margin-top: 1em;
 }
 .libelle label {
-  margin-left: 4.46px;
+  margin-left: 0.300em;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5em;
 }
 .libelle input {
-  height: 109.66px;
+  height: 6.854;
   border: 3px solid #ce8f31;
-  border-radius: 10px;
+  border-radius: 0.625em;
   outline: none;
-  font-size: 30px;
-  padding: 10px;
+  font-size: 1.875;
+  padding: 0.625em;
 }
 .montant-date {
   width: 100%;
-  padding: 0 46.39px;
-  margin-top: 43.63px;
+  padding: 0 2.899em;
+  margin-top: 2.688em;
   display: flex;
   justify-content: space-between;
 }
@@ -151,23 +151,23 @@ export default {
   flex-direction: column;
 }
 .montant-date div input {
-  width: 279.77px;
-  height: 61.86px;
-  border: 3px solid #ce8f31;
-  border-radius: 10px;
+  width: 17.486em;
+  height: 3.866em;
+  border:0.200em solid #ce8f31;
+  border-radius: 0.625em;
   outline: none;
-  font-size: 30px;
-  padding: 10px;
+  font-size: 1.875em;
+  padding: 0.625em;
 }
 .montant-date div label {
-  margin-left: 4.46px;
+  margin-left: 0.279em;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5em;
 }
 .validation {
   width: 100%;
-  padding: 0 46.39px;
-  margin-top: 43.63px;
+  padding: 0 2.899em;
+  margin-top: 2.688em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -176,44 +176,44 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 36px;
-  font-size: 24px;
+  gap: 2.25em;
+  font-size: 1.5em;
   font-weight: 600;
 }
 .btn-radio input {
-  border: 3px solid #ce8f31;
+  border: 0.625em solid #ce8f31;
   background: red;
 }
 .validation button {
-  width: 137.07px;
-  height: 59.05px;
+  width: 8.567em;
+  height: 3.691em;
   background-color: #ce8f31;
   color: white;
   border: none;
   outline: none;
-  font-size: 24px;
+  font-size: 1.5em;
   font-weight: 600;
-  border-radius: 10px;
+  border-radius: 0.625em;
 }
 .btn1 {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.625em;
 }
 .btn2 {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 0.625em;
 }
 .radio1 {
   width: 1.25em;
   height: 1.25em;
-  border: 3px solid #ce8f31;
+  border: 0.625em solid #ce8f31;
   box-sizing: border-box;
 }
 .radio2 {
   width: 1.25em;
   height: 1.25em;
-  border: 5px solid coral;
+  border: 0.313em solid coral;
 }
 </style>
