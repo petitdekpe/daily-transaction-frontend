@@ -17,7 +17,7 @@
       <div class="form-footer">
         <button @click="login">Valid­er</button>
         <span
-          >Vous n'avez pas de compte? <a href="Inscription">I­nscrivez-vous</a>
+          >Vous n'avez pas de compte? <a href="register">I­nscrivez-vous</a>
         </span>
       </div>
     </div>

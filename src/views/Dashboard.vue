@@ -247,6 +247,9 @@ th {
 
 
 @media screen and (max-width:1050px) {
+  .infos{
+    display: block;
+  }
   
 }
 </style>

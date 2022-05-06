@@ -18,11 +18,10 @@
           <input type="password" v-model="password" />
         </div>
       </div>
-      <span class="info">Mot de passe oubilié</span>
       <div class="form-footer">
         <button @click="register">Valider</button>
         <span
-          >Vous avez déjà un compte? <a href="Connexion">Connexion</a>
+          >Vous avez déjà un compte? <a href="/">Connexion</a>
         </span>
       </div>
     </div>
@@ -145,6 +144,7 @@ button {
   font-size: 24px;
   font-weight: 600;
   border-radius: 10px;
+  margin-top:2em;
 }
 .form-footer {
   justify-content: center;
