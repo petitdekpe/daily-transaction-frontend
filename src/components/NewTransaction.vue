@@ -78,9 +78,9 @@ export default {
         .then((result) => {
           console.log(result);
           this.btnModal();
-          // toastr.success("Transactions réussie")
+          toastr.success("Transactions réussie")
           
-          alert(result.message);
+          //alert(result.message);
           location.reload();
       
       })
