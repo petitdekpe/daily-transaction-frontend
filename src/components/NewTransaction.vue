@@ -125,7 +125,7 @@ export default {
   padding: 0 2.899em;
   display: flex;
   flex-direction: column;
-  margin-top: 1em;
+  margin-top: 10px;
 }
 .libelle label {
   margin-left: 0.300em;
@@ -216,5 +216,13 @@ export default {
   width: 1.25em;
   height: 1.25em;
   border: 0.313em solid coral;
+}
+
+@media screen and (max-width:1050px) {
+
+}
+
+@media screen and (max-width:800px) {
+
 }
 </style>
