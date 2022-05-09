@@ -130,10 +130,10 @@ export default {
 .modal .libelle label {
   margin-left: 0.300em;
   font-weight: 400;
-  font-size: 1.5em !important;
+  font-size: 1.5em ;
 }
-.libelle input {
-  height: 6.854;
+.modal .libelle input {
+  height: 2.5em;
   border: 3px solid #ce8f31;
   border-radius: 0.625em;
   outline: none;
@@ -222,41 +222,42 @@ export default {
 
 @media screen and (max-width:800px) {
   .modal {
-  width: 25em !important;
-  height: 32em !important;
+  width: 22em !important;
+  height: 30em !important;
   
 }
+.infomation {
+  height: 1.5em;
+  font-size: 1.5em;
+  font-weight: 10em;
+}
+
 .libelle input {
   height: 2em !important;
   width: 9.5em;
+  border-radius: 0.2em;
+  
 }
+
 .modal .montant-date {
-  margin-top: 0.5em;
+  margin-top: 0.1em;
   display: block;
   
 }
 .modal .validation {
   padding: 0 2.899em;
-  margin-top: 0.8em;
+  margin-top: 0.3em;
   flex-direction: column;
 }
 .modal .validation button {
   width: 5em;
   height: 2em;
-  margin-top: 0.5em;
+  margin-top: 0.1em;
 
 }
 
+
 }
-@media screen and (max-width:800px) {
-  .modal {
-  width: 22.5em !important;
-  height: 32em !important;
+
   
-}
-.modal-container {
-  padding-top: 2em;
- 
-}
-}
 </style>

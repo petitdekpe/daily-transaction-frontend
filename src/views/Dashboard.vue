@@ -274,8 +274,8 @@ th {
   
   }
   .add-transation {
-  width: 10em;
-  height: 2em;
+  width: 12em;
+  height: 3em;
   font-weight: 100;
   font-size: 1.5em;
   margin-right: 0.5em;
