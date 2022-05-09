@@ -106,8 +106,8 @@ export default {
   font-family: "Open sans";
 }
 .modal {
-  width: 30em;
-  height: 20em;
+  width: 20em;
+  height: 30em !important;
   background-color: white;
 }
 .infomation {
@@ -120,17 +120,17 @@ export default {
   align-items: center;
   justify-content: center;
 }
-.libelle {
+.modal .libelle {
   width: 100%;
   padding: 0 2.899em;
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
+  margin-top: 1em;
 }
-.libelle label {
+.modal .libelle label {
   margin-left: 0.300em;
   font-weight: 400;
-  font-size: 1.5em;
+  font-size: 1.5em !important;
 }
 .libelle input {
   height: 6.854;
@@ -218,11 +218,45 @@ export default {
   border: 0.313em solid coral;
 }
 
-@media screen and (max-width:1050px) {
+
+
+@media screen and (max-width:800px) {
+  .modal {
+  width: 25em !important;
+  height: 32em !important;
+  
+}
+.libelle input {
+  height: 2em !important;
+  width: 9.5em;
+}
+.modal .montant-date {
+  margin-top: 0.5em;
+  display: block;
+  
+}
+.modal .validation {
+  padding: 0 2.899em;
+  margin-top: 0.8em;
+  flex-direction: column;
+}
+.modal .validation button {
+  width: 5em;
+  height: 2em;
+  margin-top: 0.5em;
 
 }
 
+}
 @media screen and (max-width:800px) {
-
+  .modal {
+  width: 22.5em !important;
+  height: 32em !important;
+  
+}
+.modal-container {
+  padding-top: 2em;
+ 
+}
 }
 </style>

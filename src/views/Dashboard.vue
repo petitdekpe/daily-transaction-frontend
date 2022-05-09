@@ -12,7 +12,7 @@
       <div class="entrees">
         <span class="title">Total des entrées:</span>
         <span class="number">{{ received }}</span>
-        <span class="currency">Fra­ncs CFA</span>
+        <span class="currency">Fra­ncs CFA </span>
       </div>
       <div class="solde">
         <span class="title">Votre Solde:</span>
@@ -265,21 +265,21 @@ th {
   
 }
 @media screen and (max-width:800px) {
-  /* .name-and-add{
-    display: block;
-    text-align: center;
-  } */
+  .name-and-add {
+ flex-direction: column;
+}
   .name {
   margin-left: 0.5em;
-  font-size: 3em;
+  font-size: 2em;
   
   }
   .add-transation {
-  width: 8em;
-  height: 4em;
+  width: 10em;
+  height: 2em;
   font-weight: 100;
   font-size: 1.5em;
   margin-right: 0.5em;
+  margin-top: 1em;
   
 }
 .main{
@@ -289,6 +289,16 @@ th {
 }
 .data-table{
   overflow-x: auto;
+  display: block;
+}
+.infos .title {
+ white-space:nowrap; 
+}
+.infos {
+  margin-top: 2em;
+}
+.data-table {
+  margin-top: 2em;
 }
   
 }
