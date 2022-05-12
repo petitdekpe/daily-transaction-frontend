@@ -138,4 +138,49 @@ button {
 .form-footer span {
   color: #000000;
 }
+
+
+@media screen and (max-width:800px) {
+  .form-container {
+  
+  padding-top: 0%;
+}
+ .form {
+  width: 20em;
+  height: 15em;
+}
+.form-header {
+  font-weight: 200;
+  font-size: 2em;
+  line-height: 3em;
+  
+}
+.inputs {
+  font-weight: 200;
+  font-size: 2em;
+  line-height: 1em;
+}
+.nom {
+  margin-top: 0px;
+}
+
+.form span.info {
+  
+  font-weight: 200;
+  font-size: 1em;
+  line-height: 1em;
+  
+}
+button {
+  width: 5em;
+  height: 2em;
+  font-size: 24px;
+  font-weight: 300;
+  border-radius: 0.5em;
+  margin-top:1em;
+}
+.form-footer {
+  gap: 1em;
+}
+}
 </style>

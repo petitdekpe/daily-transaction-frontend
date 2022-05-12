@@ -79,4 +79,8 @@ export default {
 .auth a {
   text-decoration: none;
 }
+
+@media screen and (max-width:800px) {
+  
+}
 </style>
